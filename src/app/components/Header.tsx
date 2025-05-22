@@ -1,3 +1,5 @@
+import { navBarOptions } from "../constant/constant";
+
 export default function Header() {
   return (
     <>
@@ -5,13 +7,19 @@ export default function Header() {
         <div className="text-red-600 font-bold text-2xl">Hook</div>
         <div className="text-xl">🔍</div>
       </header>
-      <nav className="flex gap-6 text-sm font-semibold text-gray-600">
-        <span className="text-red-600 border-b-2 border-red-600 pb-1">
-          TODAY
-        </span>
-        <span>GEOPOLITICS</span>
-        <span>ASTROLOGY</span>
-        <span>ENTERTAINMENT</span>
+      <nav className="flex gap-6 text-sm font-semibold text-gray-600 p-4 overflow-scroll">
+        {navBarOptions?.map((item) => (
+          <span
+          key={item}
+            className={`${
+              item === "TODAY"
+                ? "text-red-600 border-b-2 border-red-600 pb-1 cursor-pointer"
+                : "cursor-pointer"
+            }`}
+          >
+            {item}
+          </span>
+        ))}
       </nav>
     </>
   );
