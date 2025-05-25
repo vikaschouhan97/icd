@@ -1,4 +1,5 @@
 import { navBarOptions } from "../constant/constant";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -9,16 +10,16 @@ export default function Header() {
       </header>
       <nav className="flex gap-6 text-sm font-semibold text-gray-600 p-4 overflow-scroll">
         {navBarOptions?.map((item) => (
-          <span
+          <Link href={`/${item.toLowerCase()}`}
           key={item}
             className={`${
               item === "TODAY"
-                ? "text-red-600 border-b-2 border-red-600 pb-1 cursor-pointer"
+                ? "text-red-600 border-b-2 border-red-600 pb-1 cursor-pointer italic"
                 : "cursor-pointer"
             }`}
           >
             {item}
-          </span>
+          </Link>
         ))}
       </nav>
     </>

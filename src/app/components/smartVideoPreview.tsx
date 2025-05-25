@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 
 interface SmartVideoProps {
-  src: string;
+  src: string | null;
   poster: string; // Thumbnail image path
   title: string;
 }
@@ -37,8 +37,8 @@ const SmartVideo: React.FC<SmartVideoProps> = ({ src, poster, title }) => {
     };
   }, [src]);
 
-  return (
-    <div className="relative w-full pb-28 bg-black min-w-[300px] max-w-[300px] shadow-md overflow-hidden">
+  return (  
+    <div className="relative w-full pb-12 bg-black min-w-[220px] max-w-[220px] shadow-md overflow-hidden">
       {!isLoaded && (
         <Image
           src={poster}
@@ -48,12 +48,13 @@ const SmartVideo: React.FC<SmartVideoProps> = ({ src, poster, title }) => {
           className="w-full h-96 object-cover"
         />
       )}
+      <Image src="/assets/hookSymbol.png" alt="hook" width={100} height={100} className="absolute top-2 left-2 w-8 h-8" />
       <div className="absolute bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 text-white">
-        <h2 className="text-2xl font-bold">{title}</h2>
+        <h2 className="text-lg font-bold">{title}</h2>
       </div>
       <video
         ref={videoRef}
-        src={src}
+        src={src || ""}
         className="max-h-[400px] w-full object-cover"
         style={{
           display: isLoaded ? "block" : "none",
