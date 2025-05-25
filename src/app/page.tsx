@@ -44,24 +44,24 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <div className="flex w-full mt-4 mb-2">
+      <div className="flex w-full mt-4 mb-4">
         <NewsCarousel slides={carouselSlides1} />
       </div>
       <div className="px-6 mb-16">
         <h1 className="text-[#099252] text-2xl font-bold">Numbers Matters</h1>
         <NumberMatters />
       </div>
-      <div className="flex w-full mt-4 mb-2">
+      <div className="flex w-full mt-4 mb-4">
         <NewsCarousel slides={carouselSlides2} />
       </div>
       <div className="pl-8 mb-16 w-full">
         <h1 className="text-2xl font-bold mb-2">Trending Podcasts</h1>
         <Podcasts />
       </div>
-      <div className="flex w-full mt-4 mb-2">
+      <div className="flex w-full mt-4 mb-4">
         <NewsCarousel slides={carouselSlides3} />
       </div>
-      <div className="flex w-full mt-4 mb-2">
+      <div className="flex w-full mt-4 mb-4">
         <NewsCarousel slides={carouselSlides4} />
       </div>
       <div className="px-6 pr-8 mb-4">
@@ -70,7 +70,7 @@ export default function Home() {
         </h1>
         <CategoryCards />
       </div>
-      <div className="flex w-full mb-2">
+      <div className="flex w-full mb-4">
         <NewsCarousel slides={carouselSlides5} />
       </div>
       <div className="py-2 mb-4">

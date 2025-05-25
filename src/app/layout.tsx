@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Bitter } from "next/font/google";
 import "./globals.css";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const bitter = Bitter({
-  subsets: ['latin'],
-  variable: '--font-bitter',
+  subsets: ["latin"],
+  variable: "--font-bitter",
 });
 
 export const metadata: Metadata = {
@@ -19,10 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${bitter.variable} ${bitter.variable} antialiased`}
-      >
-        {children}
+      <body className={`${bitter.variable} ${bitter.variable} antialiased`}>
+        <Loading>{children}</Loading>
       </body>
     </html>
   );
