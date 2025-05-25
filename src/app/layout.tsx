@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Bitter } from "next/font/google";
 import "./globals.css";
-import { Suspense } from "react";
 import Loading from "./loading";
 
 const bitter = Bitter({
