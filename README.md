@@ -15,7 +15,6 @@ This project is a **mobile-only responsive web application** built using **Next.
 ## 📲 Live Demo
 
 🔗 [Live URL](https://icd-sigma.vercel.app/)  
-(Replace this with the actual deployed link)
 
 ---
 
