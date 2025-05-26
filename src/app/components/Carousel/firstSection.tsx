@@ -1,4 +1,6 @@
+import LiveIcon from "@/app/assets/icons/liveIcon";
 import PlayIcon from "@/app/assets/icons/playIcon";
+import ShareIcon from "@/app/assets/icons/shareIcon";
 import Image from "next/image";
 
 interface AlsoView {
@@ -15,6 +17,8 @@ export interface SlideProps {
   headline: string;
   alsoView?: AlsoView[];
   starRatings?: string;
+  isLive?: boolean;
+  isPlayable?: boolean;
 }
 const FirstSection: React.FC<{ slide: SlideProps }> = ({ slide }) => {
   const getRecommendationQuote = (star: string) => {
@@ -36,6 +40,16 @@ const FirstSection: React.FC<{ slide: SlideProps }> = ({ slide }) => {
     <div className="bg-white rounded-md overflow-hidden pb-8 px-6">
       <div className="relative h-92 w-full">
         <Image src={slide.image} alt="news" fill className="object-cover" />
+        <Image
+          src="/assets/hookSymbol.png"
+          alt="hook"
+          width={100}
+          height={100}
+          className="absolute top-3 left-4 w-8 h-8"
+        />
+        <div className="absolute top-3 right-4">
+          <ShareIcon />
+        </div>
         {slide?.starRatings ? (
           <div className="absolute bottom-0 w-full bg-black px-2 py-1 flex justify-between">
             <p>{slide?.starRatings}</p>
@@ -49,7 +63,8 @@ const FirstSection: React.FC<{ slide: SlideProps }> = ({ slide }) => {
       </div>
       <div className="p-3">
         <div className="text-xs text-gray-500 font-semibold uppercase flex gap-2 items-center">
-          <PlayIcon />
+          {slide?.isPlayable && <PlayIcon />}
+          {slide?.isLive && <LiveIcon />}
           {slide.section}
         </div>
         <div className="text-lg font-bold leading-tight mt-1 line-clamp-2">

@@ -23,10 +23,11 @@ import NewsCarousel from "./components/Carousel/swiperCarousel";
 import NumberMatters from "./components/NumberMatter";
 import Podcasts from "./components/Podcasts";
 import CategoryCards from "./components/CategoryCard/CategoryCards";
+import BottomNavBar from "./components/bottomNavbar";
 
 export default function Home() {
   return (
-    <div className="bg-white">
+    <div className="bg-white mb-12">
       <Header />
       <main className="py-2">
         <h1 className="text-2xl ml-6 font-bold mb-6">
@@ -121,6 +122,7 @@ export default function Home() {
       <div className="flex w-full mb-2">
         <NewsCarousel slides={carouselSlides15} />
       </div>
+      <BottomNavBar />
     </div>
   );
 }

@@ -105,9 +105,10 @@ export const numberMatters = [
 
 export const carouselSlides1 = [
   {
-    image: "/assets/carousel1/carousel1.png",
+    image: "/assets/carousel1/carousel1.jpg",
     video: "",
     type: "firstSection",
+    isPlayable: true,
     section: "SECTION | SUB SECTION",
     headline:
       "An Appropriate Headline With All SEO Concerns Addressed To Come Here.",
@@ -156,8 +157,9 @@ export const carouselSlides1 = [
 
 export const carouselSlides2 = [
   {
-    image: "/assets/carousel2/carousel2.png",
+    image: "/assets/carousel2/carousel2.jpg",
     video: "",
+    isPlayable: true,
     type: "firstSection",
     section: "SECTION | SUB SECTION",
     headline:
@@ -207,9 +209,10 @@ export const carouselSlides2 = [
 
 export const carouselSlides3 = [
   {
-    image: "/assets/carousel3/1.png",
+    image: "/assets/carousel3/1.jpg",
     isLive: false,
     video: "",
+    isPlayable: true,
     type: "firstSection",
     section: "SECTION | SUB SECTION",
     headline:
@@ -253,6 +256,8 @@ export const carouselSlides4 = [
   {
     image: "/assets/carousel4/1.jpg",
     video: "",
+    isPlayable: true,
+    isLive: true,
     type: "firstSection",
     section: "SECTION | SUB SECTION",
     headline:
@@ -304,6 +309,8 @@ export const carouselSlides5 = [
   {
     image: "/assets/carousel5/1.jpg",
     video: "",
+    isPlayable: true,
+    isLive: true,
     type: "firstSection",
     section: "SECTION | SUB SECTION",
     headline:
@@ -355,6 +362,8 @@ export const carouselSlides6 = [
   {
     image: "/assets/carousel6/1.jpg",
     video: "",
+    isPlayable: true,
+    isLive: true,
     type: "firstSection",
     section: "SECTION | SUB SECTION",
     headline:
@@ -406,6 +415,8 @@ export const carouselSlides7 = [
   {
     image: "/assets/carousel7/1.jpg",
     video: "",
+    isPlayable: true,
+    isLive: true,
     type: "firstSection",
     section: "SECTION | SUB SECTION",
     headline:
@@ -457,6 +468,7 @@ export const carouselSlides8 = [
   {
     image: "/assets/carousel8/1.jpg",
     video: "",
+    isPlayable: true,
     type: "firstSection",
     section: "SECTION | SUB SECTION",
     headline:
@@ -508,6 +520,7 @@ export const carouselSlides9 = [
   {
     image: "/assets/carousel9/1.jpg",
     video: "",
+    isPlayable: true,
     type: "firstSection",
     starRatings: "⭐⭐⭐⭐⭐",
     section: "SECTION | SUB SECTION",
@@ -561,6 +574,7 @@ export const carouselSlides10 = [
     image: "/assets/carousel10.jpg",
     isLive: true,
     video: "",
+    isPlayable: true,
     type: "firstSection",
     starRatings: "⭐",
     section: "SECTION | SUB SECTION",
@@ -574,6 +588,7 @@ export const carouselSlides11 = [
     image: "/assets/carousel11.png",
     isLive: true,
     video: "",
+    isPlayable: true,
     type: "firstSection",
     starRatings: "⭐⭐",
     section: "SECTION | SUB SECTION",
@@ -587,6 +602,7 @@ export const carouselSlides12 = [
     image: "/assets/carousel12.png",
     isLive: true,
     video: "",
+    isPlayable: true,
     type: "firstSection",
     starRatings: "⭐⭐⭐",
     section: "SECTION | SUB SECTION",
@@ -600,6 +616,7 @@ export const carouselSlides13 = [
     image: "/assets/carousel13.jpg",
     isLive: true,
     video: "",
+    isPlayable: true,
     type: "firstSection",
     starRatings: "⭐⭐⭐",
     section: "SECTION | SUB SECTION",
