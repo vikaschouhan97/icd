@@ -59,7 +59,7 @@ npm start
 
 ## 👨‍💻 Author
 
-- [Your Name](https://www.linkedin.com/in/vikas-chouhan-646403121/)
+- [Vikas Chouhan](https://www.linkedin.com/in/vikas-chouhan-646403121/)
 - Email: vikaschouhan360@gmail.com
 
 ---
